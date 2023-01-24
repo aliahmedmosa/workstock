@@ -1,0 +1,28 @@
+@import"main";
+section.register-form{
+    padding-top: 80px;
+    input{
+        text-align: right;
+        outline: none;
+        &:focus{
+            border-color: $main-color;
+        -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $main-color;
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px $main-color;
+        }
+        
+    }
+    .user-type{
+        padding-top: 30px;
+    input[type=radio]{
+        margin-left: 3px;
+        &:focus{
+        border: none;
+        box-shadow: none;
+        
+        }
+        }
+        .company{
+            margin-right: 30px;
+        }
+    }
+}

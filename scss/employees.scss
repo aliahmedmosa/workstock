@@ -1,0 +1,150 @@
+@import"main";
+section.employee-filter{
+    margin: 69px 0 35px;
+    padding: 30px 0;
+    .filter-body{
+            background-color: #f5f5f5;
+            padding: 15px 0px 9px;
+            @include br(8px);
+            border: 1px solid #eceaea;
+        form{
+            padding: 0;
+            
+        input,select{
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                text-align: right;
+                font-size: 15px;
+                font-weight: bold;
+                border: 1px solid #ddd;
+                margin-bottom: 6px;
+        }
+            button{
+                    width: 100%;
+                    height: 40px;
+                    background-color: $main-color;
+                    border: none;
+                    color: #fff;
+                    font-size: 22px;
+                    padding: 9px;
+                    text-align: center;
+            }
+        }
+    }
+}
+div.employee-body{
+        padding: 25px 0;
+    div{
+        padding: 0;
+    }
+    section.employees{
+        &>div{
+            margin-bottom: 25px;
+        }
+        .employee-item{
+            text-align: right;  
+            
+            -webkit-box-shadow: 0px 0px 8px #ccc;
+            -moz-box-shadow: 0px 0px 8px #ccc;
+            -o-box-shadow: 0px 0px 8px #ccc;
+            box-shadow: 0px 0px 8px #ccc;
+              
+            .image{
+                img{
+                    width: 125px;
+                }
+            }
+            .info{
+                   padding: 23px 5px 0;
+                h3{
+                        padding: 0;
+                }
+                span{
+                        padding-left: 9px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    &:nth-child(1){
+                        color: #337ab7;
+                    }
+                }
+               
+            }
+            .details-button{
+                background-color: $main-color;
+                border: 1px solid $main-color;
+                @include tr(.5s);
+              
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #fff;
+                    transform: rotate(-90deg);
+                    padding: 48px 10px;
+                    font-size: 19px;
+                    
+                }
+            }
+            &:hover .details-button{
+                        background-color: #fff;
+                    }
+            &:hover .details-button a{
+                    color: $main-color;
+                    }
+        }
+    }
+    aside{
+        h3{
+            text-align: right;
+            font-size: 20px;
+            margin: 0 0 13px;
+            font-weight: bold;
+        }
+        .supported-employee{
+                padding: 8px;
+                margin-bottom: 15px;
+                text-align: right;
+                border: 1px solid #eceaea;
+                background-color: #f5f5f5;
+                @include br(10px);
+                position: relative;
+            .image{
+                
+                img{
+                    width: 100px;
+                }
+            }
+            .info{
+                h2{
+                            margin: 7px 0;
+                            font-size: 21px;
+                            font-weight: bold;
+                    }
+                a{
+                    text-decoration: none;
+                    h3{
+                        margin: 2px 0 9px;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: #000;
+                        @include tr(.5s);
+                        }
+                }
+                
+                p{
+                        margin: 0;
+                }
+            }
+             &:hover a h3{
+                color: $main-color;
+            }
+            i{
+                position: absolute;
+                left: 12px;
+                top: 12px;
+                font-size: 20px;
+                color: #f9c32b;
+            }
+        }
+    }
+}
